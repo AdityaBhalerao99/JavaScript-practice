@@ -61,3 +61,20 @@ let fname = "Aditya"
 let lname = " Bhalerao"
 let Name = fname + lname;
 console.log(Name) 
+
+//String + number concatenation
+console.log("1"+2); // O/P : 12
+console.log(1+"2"); // O/P : 12
+console.log("1"+2+2); // O/P : 122
+console.log(1+2+"3"); // O/P : 33 
+/*
+so here if number is coming first then it will add mumber and then String will be concatinated,
+but if String is coming first then all the numbers are treated as Strings and they will be concatinated instead of adding.
+This happens because of the priority defined in JavaScript.
+*/ 
+
+
+
+
+
+

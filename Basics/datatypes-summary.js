@@ -52,14 +52,71 @@ const heros = ["Iron Man", "Thor", "Captain America"]  // Array Example
 
 //Objects = Any values declared inside curly braces i.e " { }" , they are Objects 
 
-let myObj = {
-    name : "Aditya",
-    clgName : "Dr D Y Patil, School Of MCA, Lohegoan",
-    degree : "MCA",
-    rollNo : 104
+// let myObj = {
+//     name : "Aditya",
+//     clgName : "Dr D Y Patil, School Of MCA, Lohegoan",
+//     degree : "MCA",
+//     rollNo : 104
+// }
+
+// console.log("I am "+heros[0]);
+
+//console.log(myObj);
+
+const myFunction = function(){
+    console.log("Hello world!!!");
 }
 
-console.log("I am "+heros[0]);
 
-console.log(myObj);
+/*
+*************** Stack and Heap Memory allocation ***************
+1)Stack : used in Primitive types (When you declare the variable in stack memory
+you get the copy of that particular variable.)
+
+2)Heap : used in Non-Primitive Types like array, Functions, Objects
+(When you declare a variable of Non-Primitive in heap memory you get the reference of the original value.)
+
+in simple words: 
+Primitive Types:
+1. Stored in stack.
+2. Passed or assigned by value (call by value).
+3. Changes to copies don't affect the original.
+
+Reference Types:
+1. Stored in heap; accessed via references (stored in stack).
+2. Changing the value through another reference affects the original.
+
+*/
+
+let myName = "Aditya Bhalerao"
+
+let fullName = myName
+
+fullName = "Aditya Rajendra Bhalerao"
+
+// console.log(myName);    // o/p : Aditya Bhalerao
+// console.log(fullName);   // o/p : Aditya Rajendra Bhalerao 
+
+// here we updated the value of fullName successfully because these are primitve data types and stored in 
+// stack memory, so the copy of the variable is shared.
+
+let userDetails = {
+    roll : 104,
+    name : "Aditya",
+    college : "Dr D Y Patil",
+    address : "Somnath Nagar WadgoanSheri"
+}
+
+let studentDetails = userDetails // here we are assigning the value of userDetails to studentDetails,
+// then direct reference are shared and when we try to change any attributes then it will be reflected in both of them.
+
+studentDetails.name = "Komal"
+
+console.log(userDetails);
+console.log(studentDetails);
+
+
+
+
+
 

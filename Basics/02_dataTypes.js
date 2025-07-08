@@ -1,10 +1,10 @@
 "use strict"; //treats all JS code as newer version
 
-//alert(3 + 3) // we are usnig nodeJs and not browser
+//alert(3 + 3) // we are using nodeJs and not browser
 
 console.log(8+8)
 
-let name = "aditya"
+let name = "Aditya"
 let age = 26
 let isLoggedIn = true
 let state;              
